@@ -1,0 +1,471 @@
+<! DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="stylesheet" href="./styles.css">
+    <title>Technical Documentation</title>
+  </head>
+  <body>
+    <nav id="navbar">
+      <header>Beginner's guide to HTML, CSS, and JavaScript for Web Development</header>
+      <ul>
+        <li>     
+        <a class="nav-link" href="#Introduction">Introduction</a>
+        </li>
+        <li>
+        <a class="nav-link" href="#HTML">HTML</a>
+        </li>
+        <li>
+        <a class="nav-link" href="#CSS">CSS</a>
+        </li>
+        <li>
+        <a class="nav-link" href="#JavaScript">JavaScript</a>
+        </li>
+        <li>
+        <a class="nav-link" href="#Conclusion">Conclusion</a>
+        </li>
+      </ul>
+    </nav>
+    <main id="main-doc">
+      <section class="main-section" id="Inroduction">
+        <header><h1>- Introduction -<h1></header>
+        <p>Welcome to this beginner's guide to the basics of HTML, CSS, and JavaScript! This guide is designed to help you get started with these three essential web technologies, which are used to create and style web pages, as well as add interactivity and functionality to them. Whether you're brand new to web development or looking to refresh your skills, this guide will provide you with a solid foundation to build upon.</p>
+         <p>In this guide, we'll cover the basics of HTML, CSS, and JavaScript, including code examples and explanations for each topic. We'll also provide additional resources for further learning and exploration. By the end of this guide, you'll have a solid understanding of the fundamentals of web development and be ready to take your skills to the next level.</p>
+         <p>For more information on Web Development, check out these resources:</p>
+         <ul>
+           <li><a href="https://developer.mozilla.org/en-US/docs/Web"  class="resource">MDN Web Docs</a> - an excellent resource for learning HTML, CSS, and JavaScript, as well as other web technologies. It offers a comprehensive set of documentation, tutorials, and reference materials that are updated regularly.</li>
+           <li><a href="https://www.w3schools.com/"  class="resource">W3Schools</a> - another great resource for learning web development, with comprehensive tutorials and references for HTML, CSS, and JavaScript, as well as other web technologies.</li>
+           <li><a href="https://stackoverflow.com/"  class="resource">Stack Overflow</a> - a popular Q&A community for developers, where you can find answers to common coding questions and solutions to technical problems.</li>
+           <li><a href="https://github.com/" class="resource">GitHub</a> - a code hosting and collaboration platform where you can find open-source projects and collaborate with other developers.</li>
+           <li><a href="https://css-tricks.com/" class="resource">CSS-Tricks</a> - a website that offers tutorials, tips, and tricks for CSS, as well as a variety of other front-end development topics.</li>
+           <li><a href="https://www.smashingmagazine.com/" class="resource">Smashing Magazine</a> - a web development blog that offers articles, tutorials, and resources for front-end developers, designers, and UX professionals.</li>
+         
+      <h4>Here's an example of how to display "Hello, World!" on a web page using HTML:</h4>
+        <pre><code><!-- tag = element tag / att = attribute / val = value -->
+          <<span class="grey">!DOCTYPE <a class="tag">html</a>>
+          <<a class="tag">html</a>>
+            <<a class="tag">head</a>>
+              <<a class="tag">title</a>>Hello, World!</span><<span><a class="tag">/title</a>>
+            <<a class="tag">/head</a>>
+            <<a class="tag">body</a>>
+              <<a class="tag">h1</a>>Hello, World!</span><<span><a class="tag">/h1</a>>
+            <<a class="tag">/body</a>>
+          <<a class="tag">/html</a>></span>
+        </code></pre>
+      </section>
+      <br>
+      <section class="main-section" id="HTML"> 
+        <header><h1>- HTML -</h1></header>
+        <p>HTML, or HyperText Markup Language, is the foundation of the web. It's a markup language that's used to create the structure and content of web pages. In this section, we'll cover the basics of HTML, including tags, attributes, and elements, as well as how to create a basic HTML document.</p><br>
+        
+        <h3>Tags and Attributes</h3>
+        <p>HTML tags are used to define the structure and content of a web page. Attributes provide additional information about a tag, such as its class or ID. Here's an example of an HTML tag with some attributes:</p>
+        <pre><code>
+          <<span class="tag">div <a class="att">class</a>=<a class="val">"container"</a> <a class="att">id</a>=<a class="val">"main"</a></span>>
+            <<a class="tag">h1</a>>Welcome to my website!<<a class="tag">/h1</a>>
+            <<a class="tag">p</a>>This is some example text.<<a class="tag">/p</a>>
+          <<a class="tag">/div</a>>
+          </span>
+        </code></pre>
+        <p>In this example, the <a class="tag">div</a> tag defines a container element with the <a class="att">class</a> <a class="val">container</a> and the <a class="att">id</a> <a class="val">main</a>. The <a class="tag">h1</a> tag defines a heading, and the <a class="tag">p</a> tag defines a paragraph of text.</p><br>
+        
+        <h3>Links and Images</h3>
+        <p>HTML can also be used to include links and images on a web page. Here's an example:</p>  
+        <pre><code>
+          <span><<a class="tag">a</a> <a class="att">href</a>=<a class="val">"https://www.example.com"</a>>Click here to visit Example.com<<a class="tag">/a</a>>
+          <<a class="tag">img</a> <a class="att">src</a>=<a class="val">"https://www.example.com/image.jpg"</a> <a class="att">alt</a>=<a class="val">"An example image"</a>>
+        </pre></code>
+        <p>In this example, the <a class="tag">a</a> tag creates a link to Example.com, and the <a class="tag">img</a> tag displays an image with the specified URL and alt text.</p>
+      <br>
+      <h3>Elements</h3>
+        <p>HTML elements are the building blocks of web pages. They are used to define the structure and content of a web page and can be thought of as containers that hold different types of content, such as text, images, and multimedia.</p>
+        <p>HTML elements are defined using HTML tags, which are enclosed in angle brackets. For example, the <<span class="tag">h1</span>> tag is used to define a heading, while the <<span class="tag">p</span>> tag is used to define a paragraph.</p>
+        <p>HTML elements can also have attributes, which provide additional information about the element. For example, the <<span class="tag">img</span>> tag is used to define an image element, and it has attributes such as <span id="att">src</span> (which specifies the image source) and <span id="att">alt</span> (which provides alternative text for the image).</p>
+        <p>In the following sections, we'll explore some of the most common HTML elements in more detail and provide examples of how to use them in your HTML documents.</p>
+        <h4><<span class="tag">h1></span> - <<span class="tag">h6</span>> Headings</h4>
+        <p>Headings are used to define the main headings of a web page. HTML has six levels of headings, with <<span class="tag">h1</span>> being the most important and <<span class="tag">h6</span>> being the least important.
+        <p>Example usage:</p>
+          <pre><code>
+          <<span><a class="tag">h1</a>>Welcome to my website</span><<span><a class="tag">/h1</a></span>>
+            <<span><a class="tag">h2></a>About Me&lt</span><span><a class="tag">/h2</a></span>>
+              <<span><a class="tag">h3</a>>Experience</span><<span><a class="tag">/h3</a></span>>
+                <<span><a class="tag">h4</a>>Web Development</span><<span><a class="tag">/h4</a></span>>
+                  <<span><a class="tag">h5</a>>Design</span><<span><a class="tag">/h5</a></span>>
+                    <<span><a class="tag">h6</a>>Skills</span><<span><a class="tag">/h6</a></span>>
+          </code></pre>
+        <h4><<span class="tag">p</span>> Paragraphs</h4>
+        <p>Paragraphs are used to define blocks of text on a web page.</p>
+        <p>Example usage:</p>
+          <pre><code>
+          <<span><a class="tag">p</a>>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span><<span><a class="tag">/p</a></span>>
+          </code></pre>  
+        <h4><<span class="tag">a</span>> Links</h4>
+        <p>Links are used to create clickable hyperlinks that lead to other web pages, documents, or resources.</p>
+        <p>Example usage:</p>
+          <pre><code>
+            <<span><a class="tag">a</a> <a class="att">href</a>=<a class="val">"https://developer.mozilla.org/en-US/docs/Web/"</a>>MDN Web Docs<<a class="tag">/a</a>></span>
+          </code></pre>
+        <h4><<span class="tag">img</span>> Images</h4>
+        <p>Images are used to display images on a web page.</p>
+        <p>Example usage:</p>
+          <pre><code>
+            <<span><a class="tag">img</a> <a class="att">src</a>=<a class="val">"dog.jpg"</a> <a class="att">alt</a>=<a class="val">"Dog Picture"</a>></span>
+          </code></pre>
+        <h4><<span class="tag">ul</span>> and <<span class="tag">li</span>> Unordered Lists</h4>
+        <p>Unordered lists are used to create bulleted lists on a web page using list items <<a class="tag">li</a>>.</p>
+        <p>Example usage:</p>
+          <pre><code>
+            <<span><a class="tag">ul</a>>
+              <<a class="tag">li</a>>Item 1<<a class="tag">/li</a>>
+              <<a class="tag">li</a>>Item 2 <<a class="tag">/li</a>>
+              <<a class="tag">li</a>>Item 3<<a class="tag">/li</a>>
+            <<a class="tag">/ul</a>></span>
+          </code></pre>
+        <h4><<span class="tag">ol</span>> and <<span class="tag">li</span>> Ordered Lists</h4>
+        <p>Ordered lists are used to create numbered lists on a web page using list items <<a class="tag">li</a>>.</p>
+        <p>Example usage:</p>
+          <pre><code>
+            <<span><a class="tag">ol</a>>
+              <<a class="tag">li</a>>First Item<<a class="tag">/li</a>>
+              <<a class="tag">li</a>>Second Item<<a class="tag">/li</a>>
+              <<a class="tag">li</a>>Third Item<<a class="tag">/li</a>>
+            <<a class="tag">/ol</a>></span>
+          </code></pre>
+        <h4><<span class="tag">form</span>> Forms</h4>
+        <p>Forms are used to collect user input on a web page, such as text input, radio buttons, checkboxes, and more.</p>
+        <p>Example usage:</p>
+          <pre><code>
+            <<span><a class="tag">form</a> <a class="att">action</a>=<a class="val">"submit"</a> <a class="att">method</a>=<a class="val">"post"</a>>
+              <<a class="tag">label</a> <a class="att">for</a>=<a class="val">"name"</a>>Name: <<a class="tag">/label</a>>
+              <<a class="tag">input</a> <a class="att">type</a>=<a class="val">"text"</a> <a class="att">id</a>=<a class="val">"post"</a> <a class="att">name</a>=<a class="val">"name"</a>><<a class="tag">br</a>><<a class="tag">br</a>><br>
+              <<a class="tag">label</a> <a class="att">for</a>=<a class="val">"email"</a>>Email: <<a class="tag">/label</a>>
+              <<a class="tag">input</a> <a class="att">type</a>=<a class="val">"email"</a> <a class="att">id</a>=<a class="val">"email"</a> <a class="att">name</a>=<a class="val">"email"</a>><<a class="tag">br</a>><<a class="tag">br</a>><br>
+              <<a class="tag">input</a> <a class="att">type</a>=<a class="val">"submit"</a> <a class="att">value</a>=<a class="val">"Submit"</a>>
+            <<a class="tag">/form</a>></span>
+          </code></pre>
+        <br>
+        <p><strong><em>These are just a few examples of the many HTML elements available. By mastering the basics of HTML, you'll be able to create a wide range of web pages and applications.</em></strong></p><br>
+
+        <h3>HMTL5 Features</h3>
+        <p>HTML5 introduced many new features, including semantic tags that help define the structure and meaning of a web page. Here are some examples:</p>  
+        <pre><code>
+          <span><<a class="tag">header</a>>
+            <<a class="tag">nav</a>>
+              <<a class="tag">ul</a>>
+                <<a class="tag">li</a>><<a class="tag">a </a><a class="att">href</a>=<a class="val">"#"</a>>Home<<a class="tag">/a</a>><<a class="tag">/li</a>>
+                <<a class="tag">li</a>><<a class="tag">a </a><a class="att">href</a>=<a class="val">"#"</a>>About<<a class="tag">/a</a>><<a class="tag">/li</a>>
+                <<a class="tag">li</a>><<a class="tag">a </a><a class="att">href</a>=<a class="val">"#"</a>>Contact<<a class="tag">/a</a>><<a class="tag">/li</a>>
+              <<a class="tag">/ul</a>>
+            <<a class="tag">/nav</a>>
+          <<a class="tag">/header</a>>
+
+          <<a class="tag">main</a>>
+            <<a class="tag">article</a>>
+              <<a class="tag">h2</a>>Article Title<<a class="tag">/h2</a>>
+              <<a class="tag">p</a>>Article Text goes here.<<a class="tag">/p</a>>
+            <<a class="tag">/article</a>>
+            <<a class="tag">aside</a>>
+              <<a class="tag">h3</a>>Related Content<<a class="tag">/h3</a>>
+              <<a class="tag">ul</a>>
+                <<a class="tag">li</a>><<a class="tag">a </a><a class="att">href</a>=<a class="val">"#"</a>>Related Link 1<<a class="tag">/a</a>><<a class="tag">/li</a>>
+                <<a class="tag">li</a>><<a class="tag">a </a><a class="att">href</a>=<a class="val">"#"</a>>Related Link 2<<a class="tag">/a</a>><<a class="tag">/li</a>>
+              <<a class="tag">/ul</a>>
+            <<a class="tag">/aside</a>>
+          <<a class="tag">/main</a>>
+
+          <<a class="tag">footer</a>>
+            <<a class="tag">p></a><a class="c">&cop</a><a class="c">y;</a> Example Company 2023<<a class="tag">/p</a>>
+          <<a class="tag">/footer</a>>
+        </pre></code>
+        <p>In this example, the <a class="tag">header</a>, <a class="tag">nav</a>, <a class="tag">ul</a>, <a class="tag">li</a>, <a class="tag">main</a>, <a class="tag">article</a>, <a class="tag">aside</a>, and <a class="tag">footer</a> tags are all semantic tags that help define the structure and meaning of the page.</p><br>
+        <p>For more information on HTML, check out the following resources:</p>
+        <ul>
+          <li class="resource"><a href="https://www.w3schools.com/html/">HTML Tutorial at W3Schools</a></li>
+          <li class="resource"><a href="https://developer.mozilla.org/en-US/docs/Web/HTML">HTML Reference at MDN Web Docs</a></li>
+        </ul>
+      </section>
+      <br>
+      <section class="main-section" id="CSS">
+        <header><h1>- CSS -<h1></header>
+         <p>
+           CSS, or Cascading Style Sheets, is used to style and layout web pages. It's what gives web pages their visual design, including fonts, colors, and layout. In this section, we'll cover the basics of CSS, including selectors, properties, and values, as well as how to apply CSS styles to HTML documents.
+        </p><br>
+        <h3>CSS Selectors</h3>
+        <p>CSS selectors are used to select and target specific HTML elements on a web page. They allow developers to apply styles to specific parts of a web page, rather than applying styles to the entire page.</p>
+        <p>There are many different types of CSS selectors, including element selectors, class selectors, ID selectors, and more. In the following sections, we'll explore each type of selector in more detail and provide examples of how to use them in your CSS styles.</p>
+        <p>Here are some examples of CSS selectors:</p>
+        <ol>
+          <li>
+            <strong>Descendant Selector</strong>: selects all elements that are descendants of a specified element.
+          </li>
+          <pre><code>
+            <span><a>div p</a> {
+              <a class="prop">color</a>: <a class="cval">red</a>;
+            }</span>
+          </code></pre>
+          <p>In this example, all <<a class="tag">p</a>> elements that are descendants of <<a class="tag">div</a>> elements will have a red color.</p><br>
+          <li>
+            <strong>Class Selector (.)</strong>: selects all elements with a specified class attribute.
+          </li>
+          <pre><code>
+            <span><a class="csel">.my-class</a> {
+              <a class="prop">background-color</a>: <a class="cval">yellow</a>;
+            }</span>
+          </code></pre>
+          <p>In this example, all elements with the class attribute <a class="csel">my-class</a> will have a yellow background color.</p><br>
+          <li>
+            <strong>ID Selector (#)</strong>: selects a specific element with a unique ID attribute.
+          </li>
+          <pre><code>
+            <span><a class="isel">#my-id</a> {
+              <a class="prop">font-weight</a>: <a class="cval">bold</a>;
+            }</span>
+          </code></pre>
+          <p>In this example, the element with the ID attribute <a class="isel">my-id</a> will have a bold font weight.</p><br>
+          <li>
+            <strong>Attribute Selector</strong>: selects elements based on the presence or value of a specific attribute.
+          </li>
+          <pre><code>
+            <span>input[<a class="att">type</a>=<a class="val">"text"</a>] {
+              <a class="prop">border</a>: <a class="cval">2px solid black</a>;
+            }</span>
+          </code></pre>
+          <p>In this example, all <<a class="tag">input</a>> elements with the attribute <a class="att">type</a> set to <a class="val">"text"</a> will have a black solid border of 2px.</p><br>
+          </li>
+          <pre><code>
+            <span>* {
+              <a class="prop">margin</a>: <a class="cval">0</a>;
+              <a class="prop">padding</a>: <a class="cval">0</a>;
+            }</span>
+          </code></pre>
+          <p>In this example, all elements on the page will have a margin and padding of 0.</p>
+        </ol>
+        <p><strong><em>These are just a few examples of CSS selectors. There are many more selectors that can be used to target specific elements on a page.</em></strong></p>
+        <br>
+        <h3>CSS Properties and Values</h3>
+         <p>
+          CSS properties and values are used to define the visual design of HTML elements on a web page. Properties are used to specify the type of style, such as font size or color, while values are used to define the specific style itself.
+        </p>
+        <p>CSS provides a wide range of properties and values for developers to use, including text properties, background properties, and layout properties. In the following sections, we'll explore some of the most common CSS properties and values in more detail and provide examples of how to use them in your CSS styles.</p>
+         <br>
+        <p><h4>Long story short...</h4></p>
+        <p>CSS is used to style HTML documents. Selectors are used to target specific elements in the HTML, and properties and values are used to define the styling. Here's an example:</p>
+        <pre><code><!-- csel = class selector / prop = property / cval = css value / sele = selector -->
+        <span><a class="csel">.container </a> {
+          <a class="prop">width</a>: <a class="cval">80%</a>;
+          <a class="prop">margin</a>: <a class="cval">0 auto</a>;
+          <a class="prop">background-color</a>: <a class="cval">#f2f2f2</a>;
+        }</span>
+        
+        <span><a class="sele">h1 </a> {
+          <a class="prop">font-size</a>: <a class="cval">42px</a>;
+          <a class="prop">color</a>: <a class="cval">blue</a>;
+        }</span>
+
+        <span><a class="sele">p </a> {
+          <a class="prop">font-size</a>: <a class="cval">20px</a>;
+          <a class="prop">line-height</a>: <a class="cval">1.5</a>;
+        }</span>
+        </code></pre>
+        <p>In this example, the <a class="csel">.container</a> selector targets all elements with the class container and sets the <a class="prop">width</a>, <a class="prop">margin</a>, and <a class="prop">background color</a>. The <a class="sele">h1</a> and <a class="sele">p</a> selectors target the heading and paragraph elements, respectively, and set their <a class="prop">font size</a>, <a class="prop">color</a>, and <a class="prop">line height</a></p><br>
+        <h3>Layout with Flexbox and Grid</h3>
+        <p>CSS can also be used to create layouts using Flexbox and Grid. Here's an example:</p>
+        <pre><code><!-- csel = class selector / prop = property / cval = css value / sele = selector -->
+        <span><a class="csel">.container </a> {
+          <a class="prop">display</a>: <a class="cval">grid</a>;
+          <a class="prop">grid-template-columns</a>: <a class="cval">1fr 1fr</a>;
+          <a class="prop">grid-template-rows</a>: <a class="cval">auto</a>;
+          <a class="prop">grid-gap</a>: <a class="cval">20px</a>;
+        }</span>
+        
+        <span><a class="csel">.box </a> {
+          <a class="prop">background-color</a>: <a class="cval">rgb(100, 150, 20)</a>;
+          <a class="prop">padding</a>: <a class="cval">15px</a>;
+        }</span>
+        </code></pre>
+        <p>In this example, the <a class="csel">.container</a> selector sets the <a class="prop">display</a> to '<a class="cval">grid</a>' and defines two <a class="prop">columns</a> and any number of <a class="prop">rows</a> with a 20-pixel <a class="prop">gap</a> between them. The <a class="csel">.box</a> selector sets the <a class="prop">background color</a> and <a class="prop">padding</a> for each box.</p>
+        <h4>Layout with Flexbox:</h4>
+        <p>Flexbox is a layout model that allows you to create flexible and responsive layouts in HTML and CSS. It's designed to make it easier to align and distribute content within a container, regardless of the size of the container or the size of the content. With Flexbox, you can create complex layouts with just a few lines of code.</p>
+        <p>To use Flexbox, you first need to create a container element with the <a class="prop">display</a>: <a class="cval">flex</a>; property. This turns the container into a flex container, and allows you to use Flexbox properties to control the layout of the container's child elements. Some common Flexbox properties include:</p>
+        <ul>
+          <li>
+            <a class="prop"><strong>flex-direction</strong></a>: specifies the direction in which the flex items are laid out (<a class="cval">row</a>, <a class="cval">column</a>, <a class="cval">row-reverse</a>, or <a class="cval">column-reverse</a>).
+          </li>
+          <li>
+            <a class="prop"><strong>justify-content</strong></a>: specifies how the flex items are distributed along the main axis (<a class="cval">center</a>, <a class="cval">space-between</a>, <a class="cval">space-around</a>, or <a class="cval">space-evenly</a>).
+          </li>
+          <li>
+            <a class="prop"><strong>align-items</strong></a>: specifies how the flex items are aligned along the cross axis (<a class="cval">center</a>, <a class="cval">flex-start</a>, <a class="cval">flex-end</a>, or <a class="cval">stretch</a>).
+          </li>
+        </ul>
+        <p>Here's an example of how to use Flexbox to create a simple layout:</p>
+        <p>HTML</p>
+        <pre><code>
+            <<span><a class="tag">div</a> <a class="att">class</a>=<a class="val">"container"</a>>
+              <<a class="tag">div</a> <a class="att">class</a>=<a class="val">"item"</a>>Item 1<<a class="tag">/div</a>>
+              <<a class="tag">div</a> <a class="att">class</a>=<a class="val">"item"</a>>Item 2<<a class="tag">/div</a>>
+              <<a class="tag">div</a> <a class="att">class</a>=<a class="val">"item"</a>>Item 3<<a class="tag">/div</a>>
+            <<a class="tag">/div</a>></span>
+          </code></pre>
+        <p>CSS</p>
+        <pre><code>
+          <span><a class="csel">.container </a> {
+            <a class="prop">display</a>: <a class="cval">flex</a>;
+            <a class="prop">justify-content</a>: <a class="cval">space-around</a>;
+          }</span>
+
+          <span><a class="csel">.item </a> {
+            <a class="prop">width</a>: <a class="cval">100px</a>;
+            <a class="prop">height</a>: <a class="cval">100px</a>;
+            <a class="prop">background-color</a>: <a class="cval">beige</a>;
+          }</span>
+        </code></pre>
+        <p>In this example, the <a class="csel">container</a> class is set to <a class="prop">display</a>: <a class="cval">flex</a>;, which turns it into a flex container. The <a class="prop">justify-content</a> property is set to <a class="cval">space-around</a>, which evenly distributes the child elements within the container with equal spacing between them. The child elements (<a class="val">item</a>) are set to a fixed <a class="prop">width</a> and <a class="prop">weight</a> and given a <a class="prop">background color</a> to make them visible.</p>
+        <h4>Layout with Grid:</h4>
+        <p>Grid is another layout model in HTML and CSS that allows you to create complex layouts with ease. It's designed to work with two-dimensional layouts, meaning you can control both rows and columns in a grid. With Grid, you can create responsive and flexible layouts that adapt to different screen sizes and device types.</p>
+        <p>To use Grid, you first need to create a container element with the <a class="prop">display</a>: <a class="cval">grid</a>; property. This turns the container into a grid container, and allows you to use Grid properties to control the layout of the container's child elements. Some common Grid properties include:</p>
+        <ul>
+          <li>
+            <a class="prop"><strong>grid-template-rows</strong></a>: specifies the size and number of rows in the grid.
+          </li>
+          <li>
+            <a class="prop"><strong>grid-template-columns</strong></a>: specifies the size and number of columns in the grid.
+          </li>
+          <li>
+            <a class="prop"><strong>grid-gap</strong></a>: specifies the size of the gap between grid items.
+          </li>
+          <li>
+            <a class="prop"><strong>grid-template-areas</strong></a>: specifies a grid template by referencing named grid areas.
+          </li>
+        </ul>
+        <p>Here's an example of how to use Grid to create a simple layout:</p>
+        <p>HTML</p>
+        <pre><code>
+            <<span><a class="tag">div</a> <a class="att">class</a>=<a class="val">"container"</a>>
+              <<a class="tag">div</a> <a class="att">class</a>=<a class="val">"item"</a>>Item 1<<a class="tag">/div</a>>
+              <<a class="tag">div</a> <a class="att">class</a>=<a class="val">"item"</a>>Item 2<<a class="tag">/div</a>>
+              <<a class="tag">div</a> <a class="att">class</a>=<a class="val">"item"</a>>Item 3<<a class="tag">/div</a>>
+              <<a class="tag">div</a> <a class="att">class</a>=<a class="val">"item"</a>>Item 4<<a class="tag">/div</a>>
+              <<a class="tag">div</a> <a class="att">class</a>=<a class="val">"item"</a>>Item 5<<a class="tag">/div</a>>
+              <<a class="tag">div</a> <a class="att">class</a>=<a class="val">"item"</a>>Item 6<<a class="tag">/div</a>>
+            <<a class="tag">/div</a>></span>
+          </code></pre>
+        <p>CSS</p>
+        <pre><code>
+          <span><a class="csel">.container </a> {
+            <a class="prop">display</a>: <a class="cval">grid</a>;
+            <a class="prop">grid-template-columns</a>: <a class="func">repeat</a><a class="cval">(3, 1fr)</a>;
+            <a class="prop">grid-template-rows</a>: <a class="func">repeat</a><a class="cval">(2, 1fr)</a>;
+            <a class="prop">grid-gap</a>: <a class="cval">10px</a>;
+          }</span>
+        </code></pre>
+        <p>
+          In the example above, we have a container with six child elements. We want to create a grid with three columns and two rows, so we use the <a class="prop">grid-template-columns</a> and <a class="prop">>grid-template-rows</a> properties to define the size and number of columns and rows. In this case, we use the <a class="func">repeat</a>() function to specify that we want three columns and two rows, with each column or row taking up an equal amount of space (<a class="cval">1fr</a>).</p>
+        <p>We also use the <a class="prop">grid-gap</a> property to specify the amount of space between the grid items. In this case, we set it to <a class="cval">10px</a>.</p>
+        <p>To position the child elements in the grid, we use the <a class="prop">grid-column</a> and <a class="prop">grid-row</a> properties. These properties allow you to specify the start and end points of each item in the grid. For example, to position the first item in the top-left corner of the grid, we would use:</p>
+        <pre><code>
+          <span><a class="csel">.item:nth-child(1) </a> {
+            <a class="prop">grid-column</a>: <a class="cval">1 / 2</a>;
+            <a class="prop">grid-row:</a>: <a class="cval">1 / 2</a>;
+          }</span>
+        </code></pre>
+        <p>This specifies that the item should start in the first column and first row of the grid, and end in the second column and second row of the grid (since we want it to take up one column and one row). We can use similar rules to position the other items in the grid.</p>
+        <p>With Grid, you can also create named grid areas and reference them in your layout rules. This can make your code more readable and easier to maintain. Here's an example of how to define named grid areas:</p>
+        <pre><code>
+          <span><a class="csel">.container </a> {
+            <a class="prop">display</a>: <a class="cval">grid</a>;
+            <a class="prop">grid-template-columns</a>: <a class="func">repeat</a><a class="cval">(3, 1fr)</a>;
+            <a class="prop">grid-template-rows</a>: <a class="func">repeat</a><a class="cval">(2, 1fr)</a>;
+            <a class="prop">grid-template-areas</a>: 
+              <a class="cval">"header header header"</a>
+              <a class="cval">"main   main   sidebar"</a>
+              <a class="cval">"footer footer footer"</a>;
+          }</span>
+
+          <span><a class="csel">.header </a> {
+            <a class="prop">grid-area</a>: <a class="cval">header</a>;
+          }</span>
+
+          <span><a class="csel">.main </a> {
+            <a class="prop">grid-area</a>: <a class="cval">main</a>;
+          }</span>
+
+          <span><a class="csel">.sidebar </a> {
+            <a class="prop">grid-area</a>: <a class="cval">sidebar</a>;
+          }</span>
+
+          <span><a class="csel">.footer </a> {
+            <a class="prop">grid-area</a>: <a class="cval">footer</a>;
+          }</span>
+        </code></pre>
+        <p>In this example, we define a grid with three rows and three columns, and define named areas for the header, main content, sidebar, and footer. We then use the <a class="prop">grid-area</a> property to position each element in the appropriate area of the grid. This can make it easier to understand and modify the layout of your page.</p>
+        <p>That's a brief overview of layout with Grid in HTML and CSS. There's a lot more to learn about both Flexbox and Grid, including more advanced layout techniques and browser compatibility issues. It is recommended to explore mor resources, here are some links to resources that can help you learn more about Flexbox and Grid:</p>
+        <ul>
+          <li>
+            <a class="resource" href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout">Mozilla Developer Network (MDN) documentation on Flexbox</a>
+          </li>
+          <li>
+            <a class="resource" href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout">MDN documentation on Grid</a>
+          </li>
+          <li>
+            <a class="resource" href="https://www.freecodecamp.org/learn/responsive-web-design/">FreeCodeCamp's Responsive Web Design Certification (which includes lessons on Flexbox and Grid)</a>
+          </li>
+          <li>
+            <a class="resource" href="https://www.codecademy.com/learn/learn-css/layouts/introduction-to-layouts">Codecademy's CSS Layouts course (which covers Flexbox and Grid)</a>
+          </li>
+          <li>
+            <a class="resource" href="https://www.udemy.com/course/advanced-css-and-sass/">Udemy's Complete Flexbox and Grid course</a>
+          </li>
+        </ul>
+        <p>These resources should provide a solid foundation for learning about Flexbox and Grid, but there are many other resources available online as well.</p>
+        <br>
+        <h3>Responsive Design with Media Queries</h3>
+        <p>CSS can also be used to create responsive designs that adapt to different screen sizes. This is typically done using media queries. Here's an example:</p>
+        <pre><code>
+          <span><a class="media">@media only</a> screen <a class="operators"> and <a class="prop">(max-width</a>: <a class="cval">600px</a>) {
+            <a class="csel">.container</a> {
+              <a class="prop">grid-template-columns</a>: <a class="cval">1fr</a>;
+            }
+          }</span>
+        </code></pre>
+      </section>
+      <br>
+      <section class="main-section" id="JavaScript">
+        <header><h1>- JavaScript -</h1></header>
+         <p>
+          
+        </p>
+         <p>
+          
+        </p>
+        <code>
+          
+        </code>
+        <li>
+        
+        </li>
+      </section>
+      <section class="main-section" id="Conclusion">
+        <header><h1>- Conclusion -</h1></header>
+         <p>To conclude this documentation, those are the basics of HTML, CSS, and JavaScript. However, there is always more to learn and explore. As you continue to work with these technologies, you may encounter more advanced topics such as CSS animations, JavaScript frameworks, and server-side programming with Node.js.</p>
+         <p>To deepen your understanding and expand your skills, it is recommended to explore some additional resources, such as:</p>
+         <ul>
+           <li class="resource"><a href="https://www.codecademy.com/">Codeacademy</a></li>
+           <li class="resource"><a href="https://www.freecodecamp.org/">FreeCodeCamp</a></li>
+           <li class="resource"><a href="https://www.udacity.com/">Udacity</a></li>
+           <li class="resource"><a href="https://www.coursera.org/">Coursera</a></li>
+           <li class="resource"><a href="https://www.edx.org/">edX</a></li>
+        </ul>
+        <p>Additionally, reading articles and blogs, attending webinars and workshops, and participating in online communities can all help you continue to grow and develop your skills in HTML, CSS, and JavaScript.</p><br>
+        <p><h3><em>Congratulations!</em></h3></p>
+        <p>
+          You've completed this beginner's guide to HTML, CSS, and JavaScript! We hope this guide has provided you with a solid foundation to build upon and inspired you to continue learning and exploring these essential web technologies.</p>
+        <p>Remember, web development is an ever-evolving field, and there's always more to learn and explore. Keep practicing and building projects, and don't be afraid to try new things and experiment with different approaches. By continuing to develop your skills and staying up-to-date with the latest trends and technologies, you'll be well on your way to becoming a successful web developer.</p>
+        <pre><code>
+          <span><<a class="tag">p</a>>Thank you for reading, and happy coding!<<a class="tag">p</a>></span>
+        </code></pre>
+      </section>
+    </main>
+  </body>
+</html>
